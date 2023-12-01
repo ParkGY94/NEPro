@@ -185,7 +185,8 @@
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/3a7abe30-5b9a-4578-96c8-79fceeaede71)
 
 ### 57. 지역 객체를 반환할 때 NRVO의 이점을 활용한다. 이는 함수 내에 하나의 return문 만 쓴다는 것을 의미하며, 이것은 값으로 객체를 반환할 때만 적용된다.
-#### * NRVO : 
+#### <https://m.post.naver.com/viewer/postView.naver?volumeNo=9735713&memberNo=559061> 
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/884103e7-f545-4665-a090-92f214e30ccf)
 
 ### 58. struct나 class에서 초기화 후 값 변경을 막으려고 const 멤버 변수를 쓰지 않는다. 참조(&) 멤버변수의 경우도 마찬가지
 
@@ -211,11 +212,16 @@
 ----
 ## -. 소스 코드 포맷팅
 ### 1. override 와 final 키워드를 반드시 사용한다.
+#### * final : 클래스를 더이상 상속 불가능한 클래스로 만드는 역할
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/6dcf6acc-5410-4d31-993f-48cbaffc3b21)
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/97c1d7f6-f530-4aef-be3e-c57605b041eb)
 
 ### 2. 항상 enum class 를 사용한다.
 ####  ![image](https://github.com/ParkGY94/NEPro/assets/59813824/d15b84e4-5bc7-4f21-92a5-13d16f92480d)
 
 ### 3. 가능한 Assert 대신 static_assert 를 사용한다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/1919ca98-c946-4f77-8a14-125687a864fc)
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/5ba0f2a8-1c06-43fc-b747-73542823d24d)
 
 ### 4. 포인터에 NULL 대신 nullptr 를 사용합니다.
 
@@ -231,6 +237,7 @@
 
 ### 10. 단순 상수 변수에는 const 대신 constexpr 을 사용한다.
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/c4a90b17-f732-49d9-88e3-5b7bc26d9a4d)
+#### <https://colinch4.github.io/2020-01-01/16_%EC%9D%B4%EB%8F%99-%EC%83%9D%EC%84%B1%EC%9E%90-%EB%B0%8F-%EC%9D%B4%EB%8F%99-%EB%8C%80%EC%9E%85-%EC%97%B0%EC%82%B0%EC%9E%90/>
 
 
 
