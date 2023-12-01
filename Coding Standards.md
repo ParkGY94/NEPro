@@ -130,6 +130,7 @@
 
 ### 35. Reverse OOP 패턴을 사용할 때, 플랫폼 전용 클래스는 위 항목과 비슷한 명명 규칙을 사용한다.
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/b0dbcc13-a700-4ba4-b82f-53898c6e92b0)
+#### <https://cafemocamoca.tistory.com/199>
 
 ### 36. 표준 C assert 대신에 자신만의 Assert 버전을 구현한다.
 
@@ -138,6 +139,108 @@
 ### 38. 모든 메모리 할당은 직접 구현한 New, Delete 키워드를 통해 호출한다.
 
 ### 39. memset, memcpy, memmove와 같은 메모리 연산 역시 우리 고유의 MemSet, MemCpy, MemMove 키워드를 통해 호출해야 한다.
+
+### 40. 어떤 이유로든 매개변수로 nullptr가 넘어올 수 있는 경우가 아니라면, 포인터 대신 참조자( & )를 사용하는 것을 원칙으로 한다. (예외는 다음 항목을 참고)
+
+### 41. 함수에서 매개변수를 통해 값을 반환할 때(out 매개변수)는 포인터를 사용하며, 매개변수 이름 앞에 out을 붙인다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/ebe55648-0cda-4e7f-9510-0ebbf22321f2)
+
+### 42. 위 항목의 out 매개 변수는 반드시 null이 아니어야 한다. (함수 내부에서 if 문 대신 assert를 사용할 것)
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/99641ec8-ea57-4826-8f74-c846c72da877)
+
+### 43. 매개 변수가 클래스 내부에서 저장될 때는 포인터를 사용한다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/a8384503-d40c-446e-9be7-dda0cf9305f3)
+
+### 44. 매개 변수가 void 포인터여야 하는 경우는 포인터를 사용한다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/05b23c37-7e43-403f-ba32-0cc10e73dd30)
+
+### 45. 비트 플래그 열거형은 이름 뒤에 Flags를 붙인다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/75fd7dcc-a478-4b84-acdc-87965b8a147f)
+
+### 46. 특정 크기(예를 들어, 데이터 멤버의 직렬화를 위한 크기)가 필요하지 않은 한 열거형에 크기 지정자를 추가하지 않는다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/1bbbc966-07f4-4bba-b1c4-9462eb2c8590)
+
+### 47. 디폴트 매개 변수 대신 함수 오버로딩을 선호한다.
+
+### 48. 디폴트 매개 변수를 사용하는 경우, nullptr 나 false, 0 같이 비트 패턴이 0인 값을 사용한다.
+
+### 49. 가능한 한 고정된 크기(size)의 컨테이너를 사용한다.
+
+### 50. 동적 컨테이너를 사용해야 한다면 가능한 한 미리 reserve()를 호출한다.
+
+### 51. #define 으로 정의된 상수는 항상 괄호로 감싸준다.
+
+### 52. 상수는 #define 보다 const 상수 변수로 선언한다.
+
+### 53. 클래스를 상호 참조할 때는 #include 보다 전방선언(forward declaration)을 최대한 이용한다.
+#### * 클래스 전방선언 : 헤더파일에서 헤더파일을 포함시키는 행위가 컴파일 시간을 증가시키기 때문에 이를 막기 위해 포인터 객체를 선언할 때에는 클래스 선언 전에 필요한 클래스를 명시하여 헤더파일의 중복을 막을 수 있다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/d83da586-64be-4856-b60c-d52c3f5ce5c3)
+
+### 54. 모든 컴파일러 경고는 반드시 고친다.
+
+### 55. 변수 가리기(variable shadowing)는 허용되지 않는다. 외부 변수가 동일한 이름을 사용중이라면 내부 변수에는 다른 이름을 사용한다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/e6bc76bf-d9f5-42f2-a01c-04a6443d61ec)
+
+### 56. 한 줄에 변수 하나만 선언한다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/3a7abe30-5b9a-4578-96c8-79fceeaede71)
+
+### 57. 지역 객체를 반환할 때 NRVO의 이점을 활용한다. 이는 함수 내에 하나의 return문 만 쓴다는 것을 의미하며, 이것은 값으로 객체를 반환할 때만 적용된다.
+#### * NRVO : 
+
+### 58. struct나 class에서 초기화 후 값 변경을 막으려고 const 멤버 변수를 쓰지 않는다. 참조(&) 멤버변수의 경우도 마찬가지
+
+### 59. 멤버 변수를 초기화할 때는 초기화 리스트를 사용하는 것을 기본으로 한다.
+
+----
+## -. 소스 코드 포맷팅
+### 1. include 전처리문 블록과 코드 본문 사이에 반드시 빈 줄이 있어야 한다.
+
+### 2. 탭(tab)은 비주얼 스튜디오 기본값을 사용하며, 비주얼 스튜디오를 사용하지 않을 시 띄어쓰기 4칸을 탭으로 사용한다.
+
+### 3. 중괄호( { )를 열 때는 언제나 새로운 줄에 연다.
+
+### 4. 중괄호 안( { } )에 코드가 한 줄만 있더라도 반드시 중괄호를 사용한다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/2b33fb02-24be-4a7c-876f-aeab15b3012c)
+
+### 5. 포인터나 참조 기호는 자료형에 붙인다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/de6fe8c7-a6e2-48de-90cc-e22a87c43ee7)
+
+### 6. 초기화 리스트를 이용해 멤버 변수를 초기화할 때는 아래와 같은 포맷을 따라 한 줄에 변수 하나씩 초기화한다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/e60ff0eb-b0fb-4f62-98cc-ed664c4ae44d)
+
+----
+## -. 소스 코드 포맷팅
+### 1. override 와 final 키워드를 반드시 사용한다.
+
+### 2. 항상 enum class 를 사용한다.
+####  ![image](https://github.com/ParkGY94/NEPro/assets/59813824/d15b84e4-5bc7-4f21-92a5-13d16f92480d)
+
+### 3. 가능한 Assert 대신 static_assert 를 사용한다.
+
+### 4. 포인터에 NULL 대신 nullptr 를 사용합니다.
+
+### 5. 체의 수명이 클래스 내에서만 처리되는 경우 unique_ptr 를 사용한다. (즉, 개체 생성은 생성자에서, 개체 파괴는 소멸자에서)
+
+### 6. 적용 가능한 곳이라면 범위기반 for 문을 사용한다.
+
+### 7. 반복자나 new 키워드가 같은 줄에 있어서, 어떤 개체가 만들어지는 지 명확하게 드러나는 경우가 아니라면 auto 키워드를 사용하지 않는다.
+
+### 8. std::move를 사용하여 수동으로 반환 값을 최적화하지 않는다. 이럴 경우, 자동 NRVO 최적화가 적용되지 않는다.
+
+### 9. 이동 생성자(move constructor)와 이동 대입 연산자(move assignment operator)를 사용해도 된다.
+
+### 10. 단순 상수 변수에는 const 대신 constexpr 을 사용한다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/c4a90b17-f732-49d9-88e3-5b7bc26d9a4d)
+
+
+
+
+
+
+
+
+
+
 
 
 
