@@ -234,10 +234,11 @@
 ### 8. std::move를 사용하여 수동으로 반환 값을 최적화하지 않는다. 이럴 경우, 자동 NRVO 최적화가 적용되지 않는다.
 
 ### 9. 이동 생성자(move constructor)와 이동 대입 연산자(move assignment operator)를 사용해도 된다.
+#### <https://colinch4.github.io/2020-01-01/16_%EC%9D%B4%EB%8F%99-%EC%83%9D%EC%84%B1%EC%9E%90-%EB%B0%8F-%EC%9D%B4%EB%8F%99-%EB%8C%80%EC%9E%85-%EC%97%B0%EC%82%B0%EC%9E%90/>
 
 ### 10. 단순 상수 변수에는 const 대신 constexpr 을 사용한다.
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/c4a90b17-f732-49d9-88e3-5b7bc26d9a4d)
-#### <https://colinch4.github.io/2020-01-01/16_%EC%9D%B4%EB%8F%99-%EC%83%9D%EC%84%B1%EC%9E%90-%EB%B0%8F-%EC%9D%B4%EB%8F%99-%EB%8C%80%EC%9E%85-%EC%97%B0%EC%82%B0%EC%9E%90/>
+
 
 
 
