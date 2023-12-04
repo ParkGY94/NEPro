@@ -140,7 +140,7 @@
 
 ### 39. memset, memcpy, memmove와 같은 메모리 연산 역시 우리 고유의 MemSet, MemCpy, MemMove 키워드를 통해 호출해야 한다.
 #### *Why : std::memcpy, std::memmove, std::memset, std::memcmp, 대신해 std::copy, std::move, std::fill, and std::equal[1] 를 사용하자.타입안정적이며 성능도 더 느리지 않으며 더 나아질 여지도 있다.
-출처: https://hamait.tistory.com/1043 <https://hamait.tistory.com/1043>
+출처: https://hamait.tistory.com/1043
 
 ### 40. 어떤 이유로든 매개변수로 nullptr가 넘어올 수 있는 경우가 아니라면, 포인터 대신 참조자( & )를 사용하는 것을 원칙으로 한다. (예외는 다음 항목을 참고)
 
