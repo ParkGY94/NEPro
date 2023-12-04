@@ -171,6 +171,7 @@
 ### 50. 동적 컨테이너를 사용해야 한다면 가능한 한 미리 reserve()를 호출한다.
 
 ### 51. #define 으로 정의된 상수는 항상 괄호로 감싸준다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/6236d198-59b7-4488-8eb2-35b0fda3da4d)
 
 ### 52. 상수는 #define 보다 const 상수 변수로 선언한다.
 
