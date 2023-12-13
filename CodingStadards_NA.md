@@ -196,6 +196,7 @@ int m_nAge;
 
 ### 55. 변수 가리기(variable shadowing)는 허용되지 않는다. 외부 변수가 동일한 이름을 사용중이라면 내부 변수에는 다른 이름을 사용한다.
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/e6bc76bf-d9f5-42f2-a01c-04a6443d61ec)
+#### <https://www.learncpp.com/cpp-tutorial/variable-shadowing-name-hiding/>
 
 ### 56. 한 줄에 변수 하나만 선언한다.
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/3a7abe30-5b9a-4578-96c8-79fceeaede71)
