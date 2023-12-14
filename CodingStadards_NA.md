@@ -58,7 +58,7 @@ int m_nAge;
 ### 10. goto 레이블 명은 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/ba3918b1-7db2-4ba3-b863-ad7e110589a6)
 
-### 11. 값을 반환하는 함수의 이름은 무엇을 반환하느ㄴ지 알 수 있게 짓는다.
+### 11. 값을 반환하는 함수의 이름은 무엇을 반환하는지 알 수 있게 짓는다.
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/ff93358c-bf69-4b1d-ac4c-c0fb3f658f5b)
 
 ### 12. 단순히 반복문에 사용되는 변수가 아닌 경우에는 i, e 같은 변수명 대신 index, employee 처럼 변수에 저장되는 데이터를 한눈에 알아볼 수 있는 변수명을 사용한다.
