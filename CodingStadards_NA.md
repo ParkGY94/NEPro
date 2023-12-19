@@ -132,7 +132,8 @@ int m_nAge;
 #### *const_cast : const로 선언된 포인터를 일반 포인터로 캐스팅해주는 역할 (포인터가 아닌 일반 변수나 함수 포인터, 멤버 함수에는 사용 불가)
 #### ex)
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/185dd5c3-3af9-4590-a949-7c9cc2db6f1b)
-#### ![Uploading image.png…]()
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/a970990e-7084-402e-9251-6c60961e430d)
+
 
 
 ### 32. 클래스는 각각 독립된 소스 파일에 있어야 한다. 단, 작은 클래스 몇 개를 한 파일 안에 같이 넣어두는 것이 상식적일 경우 예외를 허용한다.
