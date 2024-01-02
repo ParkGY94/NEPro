@@ -29,4 +29,11 @@ void main()
 ```
 ### 따라서 B b;로 객체를 생성하면 이 b 객체는 B클래스의 vtable을 가리키는 vptr을 가지므로 b 객체를 A클래스로 업캐스팅을 한 후 Draw()함수를 호출하면 B 클래스의 가상 함수 테이블을 따라가게 되므로, B::Draw()가 호출됩니다.
 
-## 2. 
+## 2. #define과 const 차이
+### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/3fb19dc3-9393-4094-bf76-952c5f803b14)
+### [ 기호 테이블 ( Symbol-Table ) 이란 ?
+### c, c++ 컴파일 과정에서 .obj, .o 형식의 오브젝트 파일이 생성된다.
+### 이 파일 안에 심볼 테이블이라는 데이터 구조가 존재하게 되는데, 이것을 통해 obj 파일의 여러 항목을 링커가 이해할 수 있는 이름으로 매핑시킨다.
+### 그 밖에도 Variable name, Function name Objects, Classes, Interfaces 가 포함되며 보통 Hash Table 형태로 구현 된다. ] -----
+### 또한 #define의 경우에는 사용한 횟수만큼 사본이 생성되지만, const 의 경우에는 사본이 단 한 번만 생성된다.
+
