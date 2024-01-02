@@ -240,10 +240,12 @@ int m_nAge;
 ####  ![image](https://github.com/ParkGY94/NEPro/assets/59813824/d15b84e4-5bc7-4f21-92a5-13d16f92480d)
 
 ### 3. 가능한 Assert 대신 static_assert 를 사용한다.
-#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/1919ca98-c946-4f77-8a14-125687a864fc)
-#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/5ba0f2a8-1c06-43fc-b747-73542823d24d)
+#### <https://reoul.github.io/cpp/cpp-37/>
 
 ### 4. 포인터에 NULL 대신 nullptr 를 사용합니다.
+#### NULL은 포인터가 아니라 매크로에서 정의된 상수 0 이다.
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/624460ac-bcae-428c-ab62-5577721aa9b5)
+
 
 ### 5. 개체의 수명이 클래스 내에서만 처리되는 경우 unique_ptr 를 사용한다. (즉, 개체 생성은 생성자에서, 개체 파괴는 소멸자에서)
 
