@@ -208,9 +208,7 @@ int m_nAge;
 #### <https://m.post.naver.com/viewer/postView.naver?volumeNo=9735713&memberNo=559061> 
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/884103e7-f545-4665-a090-92f214e30ccf)
 
-### 58. struct나 class에서 초기화 후 값 변경을 막으려고 const 멤버 변수를 쓰지 않는다. 참조(&) 멤버변수의 경우도 마찬가지
-
-### 59. 멤버 변수를 초기화할 때는 초기화 리스트를 사용하는 것을 기본으로 한다.
+### 58. 멤버 변수를 초기화할 때는 초기화 리스트를 사용하는 것을 기본으로 한다.
 
 ----
 ## -. 소스 코드 포맷팅
