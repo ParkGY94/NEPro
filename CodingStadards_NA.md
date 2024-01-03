@@ -207,6 +207,26 @@ int m_nAge;
 ### 57. 지역 객체를 반환할 때 NRVO의 이점을 활용한다. 이는 함수 내에 하나의 return문 만 쓴다는 것을 의미하며, 이것은 값으로 객체를 반환할 때만 적용된다.
 #### <https://m.post.naver.com/viewer/postView.naver?volumeNo=9735713&memberNo=559061> 
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/884103e7-f545-4665-a090-92f214e30ccf)
+#### NRVO, RVO의 차이
+#### NRVO 예시
+```cpp
+MyClass func()
+{
+  MyClass obj;
+  //작업
+  // obj를 봔환
+  return obj;
+}
+```
+#### RVO 예시
+```cpp
+MyClass func()
+{
+  //작업
+  // 직접 반환
+  return MyClass(0);
+}
+```
 
 ### 58. 멤버 변수를 초기화할 때는 초기화 리스트를 사용하는 것을 기본으로 한다.
 
