@@ -256,6 +256,10 @@ MyClass func()
 
 ### 2. 항상 enum class 를 사용한다.
 ####  ![image](https://github.com/ParkGY94/NEPro/assets/59813824/d15b84e4-5bc7-4f21-92a5-13d16f92480d)
+#### - enum class 장점
+#### 1. 멤버 변수의 이름이 중복 될 수 있다.
+#### 2. 서로 다른 enum class 타입끼리 비교할 수 없다.
+#### 3. 멤버 변수의 타입을 정할 수 있다.
 
 ### 3. 가능한 Assert 대신 static_assert 를 사용한다.
 #### <https://reoul.github.io/cpp/cpp-37/>
