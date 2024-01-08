@@ -31,9 +31,9 @@ void main()
 
 ## 2. #define과 const 차이
 ### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/3fb19dc3-9393-4094-bf76-952c5f803b14)
-### [ 기호 테이블 ( Symbol-Table ) 이란 ?
+### * 기호 테이블 ( Symbol-Table ) 이란 ?
 ### c, c++ 컴파일 과정에서 .obj, .o 형식의 오브젝트 파일이 생성된다.
 ### 이 파일 안에 심볼 테이블이라는 데이터 구조가 존재하게 되는데, 이것을 통해 obj 파일의 여러 항목을 링커가 이해할 수 있는 이름으로 매핑시킨다.
-### 그 밖에도 Variable name, Function name Objects, Classes, Interfaces 가 포함되며 보통 Hash Table 형태로 구현 된다. ] -----
+### 그 밖에도 Variable name, Function name Objects, Classes, Interfaces 가 포함되며 보통 Hash Table 형태로 구현 된다. 
 ### 또한 #define의 경우에는 사용한 횟수만큼 사본이 생성되지만, const 의 경우에는 사본이 단 한 번만 생성된다.
 
