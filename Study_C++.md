@@ -42,3 +42,8 @@ void main()
 ### emplace_back은 가변인자 템플릿을 사용해서 삽입하려는 자료형에 따라 함수 내에서 삽입을 위한 객체를 자체 생성할 수 있다 -> 즉 똑같은 임시 객체를 만들 필요가 없다 -> 파괴해야 할 임시 객체 자체가 생기지 않는다 -> 잠깐 쓰고 버릴 메모리를 할당할 필요가 없다.
 출처: https://hgu-can.tistory.com/entry/C-stdvector-pushback-vs-emplaceback-차이점 [코딩 공부하는 코딩류:티스토리]
 ### <https://growup-dev.tistory.com/entry/CC-vector-%ED%95%A8%EC%88%98pushback-emplaceback>
+
+## 4. Initializer List를 사용해야 하는 이유
+### Initializer List를 사용하여 초기화 하는 경우, 변수를 입력 값으로 바로 생성하지만
+### Initailizer List를 사용하지 않고 중괄호를 사용할 경우, 변수를 생성 후 값을 입력하는 구조
+### 따라서 Initailizer List가 효율적이며 Const 변수의 경우는 Initailizer List를 통해서만 초기화 할 수 있다.
