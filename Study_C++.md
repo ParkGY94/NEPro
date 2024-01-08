@@ -38,4 +38,7 @@ void main()
 ### 또한 #define의 경우에는 사용한 횟수만큼 사본이 생성되지만, const 의 경우에는 사본이 단 한 번만 생성된다.
 
 ## 3. push_back과 emplace_back의 차이
+### push_back은 객체를 삽입하기 위해서 똑같은 임시 객체를 하나 더 만들어서 거기에 복사한 다음 벡터에 삽입 -> 삽입이 끝나면 임시 객체 파괴 -> 잠깐 쓰고 버릴 메모리를 굳이 할당해 줘야 함. 임시 객체 생성자를 호출해서 생성하고 소멸자를 불러서 파괴시키는 과정에서 불필요한 연산이 생긴다.
+### emplace_back은 가변인자 템플릿을 사용해서 삽입하려는 자료형에 따라 함수 내에서 삽입을 위한 객체를 자체 생성할 수 있다 -> 즉 똑같은 임시 객체를 만들 필요가 없다 -> 파괴해야 할 임시 객체 자체가 생기지 않는다 -> 잠깐 쓰고 버릴 메모리를 할당할 필요가 없다.
+출처: https://hgu-can.tistory.com/entry/C-stdvector-pushback-vs-emplaceback-차이점 [코딩 공부하는 코딩류:티스토리]
 ### <https://growup-dev.tistory.com/entry/CC-vector-%ED%95%A8%EC%88%98pushback-emplaceback>
