@@ -188,6 +188,7 @@ int m_nAge;
 
 ### 51. #define 으로 정의된 상수는 항상 괄호로 감싸준다.
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/6236d198-59b7-4488-8eb2-35b0fda3da4d)
+#### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/35a7fd6c-f2b5-4cca-9313-7159136e7e1b)
 
 ### 52. 상수는 #define 보다 const 상수 변수로 선언한다.
 
