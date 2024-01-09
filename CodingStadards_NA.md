@@ -49,7 +49,7 @@ bool m_bfriend;
 ### 8. 열거형을 선언할 때는 앞에 e를 붙인다.
 #### ![image](https://github.com/ParkGY94/NEPro/assets/59813824/7a436af9-af75-4d8f-85dd-593d2da6ecd9)
 
-### 9. 클래스 멤버 변수명은 앞에 m_을 붙인다.[Uploading CodingStadards_NA (2).md…]()
+### 9. 클래스 멤버 변수명은 앞에 m_을 붙인다.
 
 ```cpp
 bool m_bfriend;
