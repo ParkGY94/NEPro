@@ -47,3 +47,14 @@ void main()
 ### Initializer List를 사용하여 초기화 하는 경우, 변수를 입력 값으로 바로 생성하지만
 ### Initailizer List를 사용하지 않고 중괄호를 사용할 경우, 변수를 생성 후 값을 입력하는 구조
 ### 따라서 Initailizer List가 효율적이며 Const 변수의 경우는 Initailizer List를 통해서만 초기화 할 수 있다.
+
+## 5. RAII
+### RAII는 Resource acquisition is initialization의 약자로 획득한 자원은 초기화 한다 라고 해석이 된다.
+### 리소스 소유 스택 개체가 범위를 벗어나면 소멸자가 자동으로 호출되는 패턴
+### ex) 스마트 포인터, lock_guard 등이 있다.
+
+## 6. 객체 생성 규칙 Rule Of Five
+### C++11 이전에는 Rule of Three
+### Rule Of Five : 클래스 설계 시 소멸자, 복사 생성자, 복사 연산자, 이동 생성자, 이동 연산자 다섯 중 하나라도 사용자가 집접 구현한다면 나머지 넷도 모두 구현해야한다.
+### Rule Of Three : 클래스 설계 시 소멸자, 복사 생성자, 복사 연산자 셋 중 하나라도 사용자가 집접 구현한다면 나머지 둘도 모두 구현해야한다.
+### <https://object-world.tistory.com/6>
