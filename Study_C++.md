@@ -90,3 +90,4 @@ void main()
 ##### 11. 비지터(Visitor)
 
 ## 8. 옵저버 패턴
+### <https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EC%98%B5%EC%A0%80%EB%B2%84Observer-%ED%8C%A8%ED%84%B4-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90#observer_pattern>
