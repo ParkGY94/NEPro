@@ -60,5 +60,33 @@ void main()
 ### <https://object-world.tistory.com/6>
 
 ## 7. 디자인 패턴
-### 디자인 패턴은 많은 개발자들이 직면하는 문제를 해결하기 위한 방법을 모아 체계적으로 일반화한 것이다. 일부 상속이 아닌 구조도 있지만 핵심은 "문제 해결을 위해 다형성을 이용하고 객체간에 어떤 관계를 만들 것인가"이다. 따라서 클래스 상속 방법과 이로 인해 만들어 지는 관계를 알고 있다면 어렵지 않게 학습하고 활용할 수 있다.
-### 
+### 디자인 패턴은 많은 개발자들이 직면하는 문제를 해결하기 위한 방법을 모아 체계적으로 일반화한 것이다.
+### 디자인 패턴 종류
+#### 생성 패턴(Creational Patterns)
+##### 1. 추상 팩토리(Abstract Factory)
+##### 2. 빌더(Builder)
+##### 3. 팩토리메서드(Factory Methods)
+##### 4. 프로토타입(Prototype)
+##### 5. 싱글톤(Singleton)
+#### 구조 패턴(Structural Patterns)
+##### 1. 어댑터(Adapter)
+##### 2. 브릿지(Bridge)
+##### 3. 콤포지트(Composite)
+##### 4. 데코레이터(Decorator)
+##### 5. 퍼사드(Facade)
+##### 6. 플라이웨이트(FlyWeight)
+##### 7. 프록시(Proxy)
+#### 행위 패턴(Behavioral Patterns)
+##### 1. 역할 사슬(Chain of Responsibility)
+##### 2. 커맨드(Command)
+##### 3. 인터프리터(Interpreter)
+##### 4. 이터레이터(iterator)
+##### 5. 미디에이터(Mediator)
+##### 6. 메멘토(Memento)
+##### 7. 옵저버(Observer)
+##### 8. 스테이트(State)
+##### 9. 스트래티지(Strategy)
+##### 10. 템플릿 메서드(Template Method)
+##### 11. 비지터(Visitor)
+
+## 8. 옵저버 패턴
