@@ -90,4 +90,7 @@ void main()
 ##### 11. 비지터(Visitor)
 
 ## 8. 옵저버 패턴
-### <https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EC%98%B5%EC%A0%80%EB%B2%84Observer-%ED%8C%A8%ED%84%B4-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90#observer_pattern>
+### 옵저버 패턴은 옵저버들이 관찰학소 있는 대상자의 상태가 변화가 있을 때마다 대상자는 직접 목록의 각 관찰자들에게 통지하고, 관찰자들은 알림을 받아 조치를 취하는 행동 패턴이다.
+### 옵저버 패턴은 여다 라느 디자인 패턴들과는 다르게 일대다 의존성을 가지는데, 주로 분산 이벤트 핸들링 시스템을 구현하는데 사용된다. 발행/구독 모델로도 알려져 있다.
+![image](https://github.com/ParkGY94/NEPro/assets/59813824/9b6b813e-0e8e-4588-9857-9b8d732c39ef)
+
