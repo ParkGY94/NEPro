@@ -196,4 +196,4 @@ int main(int argc, char* argv[])
 	return 0;
 }
 ```
-
+#### 출처 https://se-jung-h.tistory.com/entry/Design-pattern-observer-pattern%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4
